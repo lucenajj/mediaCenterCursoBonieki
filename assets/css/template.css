@@ -1,0 +1,38 @@
+/* CORPO DA MINHA PAGINA */
+body{
+/* DEIXA O SITE SEM MARGEM */
+margin: 0%;
+padding: 0%;
+}
+/* CABEÇALHO DA MINHA PÁGINA */
+header{
+    /* PROPRIEDADE PARA MANIPULAR MEU CABEÇALHO */
+    display: flex;
+    /* COLOCA MEU CABEÇALHO NO CENTRO */
+    justify-content: center;
+    /* ALTURA DO MEU CABEÇALHO */
+    height: 120px;
+}
+
+.container{
+    /* LARGURA DO MEU CONTAINER */
+    width: 990px;
+    /* ALTURA DO MEU CONTAINER */
+    height: 100px;
+    /* COR DO MEU CONTAINER */
+    background-color: red;
+    /* PROPRIEDADE PARA MANIPULAR MEU CONTAINER */
+    display: flex;
+    /* COLOCA O CONTEÚDO UM DE CADA LADO DO CONTAINER */
+    justify-content: space-between;
+}
+.logo{
+    /* PROPRIEDADE PARA MANIPULAR MINHA LOGO */
+    display: flex;
+    /* COLOCA MINHA LOGO NO CENTRO DO CONTAINER */
+    align-items: center;
+
+}
+.menu{
+
+}
