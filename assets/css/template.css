@@ -16,11 +16,9 @@ header{
 
 .container{
     /* LARGURA DO MEU CONTAINER */
-    width: 990px;
+    width: 1500px;
     /* ALTURA DO MEU CONTAINER */
-    height: 100px;
-    /* COR DO MEU CONTAINER */
-    background-color: red;
+    height: 200px;
     /* PROPRIEDADE PARA MANIPULAR MEU CONTAINER */
     display: flex;
     /* COLOCA O CONTEÚDO UM DE CADA LADO DO CONTAINER */
@@ -31,8 +29,61 @@ header{
     display: flex;
     /* COLOCA MINHA LOGO NO CENTRO DO CONTAINER */
     align-items: center;
+    margin-top: 30px;
 
 }
 .menu{
+    /* PROPRIEDADE PARA MANIPULAR MEUS LINKS */
+    display: flex;
+    /* COLOCA MEUS LINKS NO MEIO DO MEU CONTAINER */
+    align-items: center;
+    margin-bottom: 35px;
+    
+}
+nav ul,
+nav li{
+    /* TIRA AS BOLINHAS DE CADA LINK */
+    list-style: none;
+    /* TIRA MARGIN DE TODOS OS LINKS */
+    margin: 0%;
+    padding: 0%;
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    /* PARA QUE EU CONSIGA ALTERAR TAMANHO, ÁREA DO LINK... */
+    display: block;
+    /* ESPAÇAMENTO ENTRE OS LINKS */
+    padding: 15px;
+    /* TIRA O SUBLINHADO DO LINK */
+    text-decoration: none;
+    /* DEIXA OS LINK TUDO EM MAIUSCULO */
+    text-transform: uppercase;
+    /* COR DOS LINKS DO CABEÇALHO */
+    /*color: #727272;*/
+    color: #eb3437;
+}
+/*  */
+nav .linkAtivo a,
+nav a:hover{
+    /*background-color: #39aae1;*/
+    background-color: #ec8486;
+    color: black;    
+    font-weight: bold;
+    border-radius: 10px;
+}
+/* IMAGEM DA MINHA PRIMEIRA SEÇÃO */
+#banner{
+    /* IMAGEM DO NOSSO BANNER */
+    background-image:url('../image/girls.jpg');
+    /* POSIÇÃO DO NOSSO BANNER */
+    background-position: center;
+    /* IMAGEM EXPANDE PARA PREENCHER O ESPAÇO DO NOSSO BANNER */
+    background-size: cover;
+    /* ALTURA DA NOSSA IMAGEM */
+    height: 500px;
+    margin-top: 43px;
+    
 
 }
