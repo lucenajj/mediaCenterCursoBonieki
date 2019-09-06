@@ -1,8 +1,14 @@
+/* FONT DO MEU SITE */
+*{
+    font-family: Arial;
+    font-weight: bold;
+}
 /* CORPO DA MINHA PAGINA */
 body{
 /* DEIXA O SITE SEM MARGEM */
-margin: 0%;
-padding: 0%;
+margin: 0;
+padding: 0;
+
 }
 /* CABEÇALHO DA MINHA PÁGINA */
 header{
@@ -15,38 +21,35 @@ header{
 }
 
 .container{
-    /* LARGURA DO MEU CONTAINER */
+    /* LARGURA DO MEU CONTAINER  CABEÇALHO*/
     width: 1500px;
     /* ALTURA DO MEU CONTAINER */
-    height: 200px;
+    /*height: 100px;*/
     /* PROPRIEDADE PARA MANIPULAR MEU CONTAINER */
     display: flex;
     /* COLOCA O CONTEÚDO UM DE CADA LADO DO CONTAINER */
     justify-content: space-between;
+    
 }
 .logo{
     /* PROPRIEDADE PARA MANIPULAR MINHA LOGO */
     display: flex;
     /* COLOCA MINHA LOGO NO CENTRO DO CONTAINER */
     align-items: center;
-    margin-top: 30px;
-
 }
 .menu{
     /* PROPRIEDADE PARA MANIPULAR MEUS LINKS */
     display: flex;
     /* COLOCA MEUS LINKS NO MEIO DO MEU CONTAINER */
     align-items: center;
-    margin-bottom: 35px;
-    
 }
 nav ul,
 nav li{
     /* TIRA AS BOLINHAS DE CADA LINK */
     list-style: none;
     /* TIRA MARGIN DE TODOS OS LINKS */
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 nav ul{
     display: flex;
@@ -62,28 +65,125 @@ nav a{
     text-transform: uppercase;
     /* COR DOS LINKS DO CABEÇALHO */
     /*color: #727272;*/
-    color: #eb3437;
+    color: black;
+    /* TAMANHO DA FONTE DO CABEÇALHO */
+    font-size: 20px;
 }
 /*  */
-nav .linkAtivo a,
+/* nav .linkAtivo a, */
 nav a:hover{
     /*background-color: #39aae1;*/
-    background-color: #ec8486;
+    background-color: rgb(166, 166, 221);
     color: black;    
     font-weight: bold;
     border-radius: 10px;
 }
 /* IMAGEM DA MINHA PRIMEIRA SEÇÃO */
 #banner{
+    /* MANIPULA PROPRIEDADES DA MINHA DIV BANNER */
+    display: flex;
+    justify-content: center;
     /* IMAGEM DO NOSSO BANNER */
-    background-image:url('../image/girls.jpg');
+    background-image:url('../image/img1.jpg');
     /* POSIÇÃO DO NOSSO BANNER */
     background-position: center;
     /* IMAGEM EXPANDE PARA PREENCHER O ESPAÇO DO NOSSO BANNER */
     background-size: cover;
     /* ALTURA DA NOSSA IMAGEM */
-    height: 500px;
-    margin-top: 43px;
-    
+    height: 670px;
+}
 
+.column{
+    flex-direction: column;
+}
+/* MODIFICAÇÕES NO CONTAINER ONDE O H1 E H2 ESTÃO INCREMENTADOS */
+.banner_headline{
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+/* MODIFICAÇÕES NO MEU TEXTO O DO H1 */
+.banner_headline h1{
+    color: #FFFFFF;
+    font-size: 70px;
+    max-width: 300px;
+    text-shadow: 2px 2px 0px #000000;
+    margin: 0;
+    padding: 0;
+}
+/* MODIFICAÇÕES NO MEU TEXTO O DO H2 */
+.banner_headline h2{
+    color: #FFFFFF;
+    font-size: 25px;
+    max-width: 300px;
+    text-shadow: 0px 2px 0px #000000;
+    margin-top: 20px; 
+    padding: 0;
+}
+.banner_options{ 
+   display: flex;
+   height: 240px;
+}
+/* MODIFICAÇÕES NO MEU TEXTO O DO H1 */
+.banner_headline h1{
+    color: #FFFFFF;
+    font-size: 70px;
+    max-width: 300px;
+    text-shadow: 2px 2px 0px #000000;
+    margin: 0;
+    padding: 0;
+}
+/* MODIFICAÇÕES NO MEU TEXTO O DO H2 */
+.banner_headline h2{
+    color: #FFFFFF;
+    font-size: 25px;
+    max-width: 300px;
+    text-shadow: 0px 2px 0px #000000;
+    margin-top: 20px; 
+    padding: 0;
+}
+.banner01,
+.banner02,
+.banner03{
+    flex: 1;
+    color: white;
+    padding: 20px;
+
+}
+.banner01{
+    background-color: #39aae1;
+    
+}
+.banner02{
+    background-color: #0079c7;
+}
+.banner03{
+    background-color: #2b4c99;
+}
+.bannerTitle{
+    font-size: 24px;
+}
+.bannerDesc{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* PROPRIEDADES DOBOTÃO READ MORE */
+.banner_options a{
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.bannerHoras{
+    display: flex; 
+    justify-content: space-between;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 18px;
+    /* LINHA ABAIXO DE CADA HORÁRIO */
+    border-bottom: 1px solid #0079c7;
 }
