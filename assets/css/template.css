@@ -245,3 +245,60 @@ nav a:hover{
     width: 20%;
     font-size: 30px;
 }
+/* FLEX COLOCADO EM MEU BODY PARA PODER ORGANIZAR TODAS AS FOTOS E TEXTOS QUE ESTÃO NO BODY */
+.flex{
+    display: flex;
+    /* DA LIBERDADE PARA OS ITENS QUEBRAREM QUANDO NÃO COUBER NO CONTAINER */
+    flex-wrap: wrap;
+}
+/* DEIXA TODOS DO MESMO TAMANHO */
+article{
+    flex: 1;
+    min-width: 400px;
+    margin-right: 20px;
+}
+article a{
+    text-decoration: none;
+}
+/* CONTROLE E FORMATAÇÃO DA DATA E CURTIDAS */
+article .newsData{
+    display: flex;
+    margin-bottom: 12px;
+
+}
+/* CONTROLE E FORMATAÇÃO DA DATA QUE FOI POSTADO */
+article .newsPostedAt{
+    background-color: #2b4c99;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 10px;
+    margin-right: 2px;
+}
+/* CONTROLE E FORMATAÇÃO DAS CURTIDAS */
+article .newsComments{
+    background-color: #39aae1;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 10px;
+    margin-right: 2px;
+}
+.newsThumbnail{
+    margin-top: 30px;
+}
+article .newsThumbnail img{
+    width: 100%;
+    height: auto;
+}
+article .newsTitle{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    color: black;
+}
+article .newsResume{
+    font-size: 14px;
+    color: #5c5c5c;
+    line-height: 19px;
+    margin-bottom: 15px;
+    
+}
