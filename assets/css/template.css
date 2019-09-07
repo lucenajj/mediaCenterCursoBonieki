@@ -1,6 +1,6 @@
 /* FONT DO MEU SITE */
 *{
-    font-family: Arial;
+    
     font-weight: bold;
 }
 /* CORPO DA MINHA PAGINA */
@@ -111,6 +111,7 @@ nav a:hover{
     text-shadow: 2px 2px 0px #000000;
     margin: 0;
     padding: 0;
+    
 }
 /* MODIFICAÇÕES NO MEU TEXTO O DO H2 */
 .banner_headline h2{
@@ -186,4 +187,61 @@ nav a:hover{
     padding-bottom: 18px;
     /* LINHA ABAIXO DE CADA HORÁRIO */
     border-bottom: 1px solid #0079c7;
+}
+#geral{
+    display: flex;
+    justify-content: center;
+}
+#geral section{
+    flex: 2;
+}
+#geral aside{
+    flex: 1;
+}
+.widgetTitle{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widgetTitleText{
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+}
+.widgetTitleBar{
+    width: 50px;
+    height: 2px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+}
+/* MANIPULA OS QUADRADOS DO DEPARTMENTS */
+.widgetBodySquare{
+    display: flex;
+}
+
+.widgetQuadrado{
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: DodgerBlue;
+}
+.border{
+    width: 425px;
+    height: 3px;
+    background-color: #36a9e1;
+    margin-top: 20px;
+}
+.bannerInfoInt{
+    display: flex; 
+    justify-content: space-between;
+    font-size: 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    /* LINHA ABAIXO DE CADA HORÁRIO */
+    border-bottom: 1px solid #0079c7;
+}
+.bannerTitleInfo{
+    margin: auto;
+    width: 20%;
+    font-size: 30px;
 }
